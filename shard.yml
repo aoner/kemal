@@ -8,10 +8,6 @@ crystal: "~> 1.5.0"
 
 license: MIT
 
-targets:
-  kemal:
-    main: src/amber/cli.cr
-
 dependencies:
   exception_page:
     github: crystal-loot/exception_page
@@ -25,9 +21,6 @@ dependencies:
   kilt:
     github: jeromegn/kilt
     version: ~> 0.6.0
-  cli:
-    github: amberframework/cli
-    version: ~> 0.11.3
   yaml_mapping:
     github: crystal-lang/yaml_mapping.cr
     version: ~> 0.1.0
@@ -40,20 +33,9 @@ dependencies:
   sqlite3:
     github: crystal-lang/crystal-sqlite3
     version: ~> 0.18.0
-  shell-table:
-    github: luckyframework/shell-table.cr
-    version: ~> 0.9.3
   inflector:
     github: phoffer/inflector.cr
     version: ~> 1.0.0
-  teeplate:
-    github: amberframework/teeplate
-    version: ~> 0.11.2
   liquid:
     github: dare892/liquid.cr
     branch: chore/bump-version-crystal1.0.0
-
-development_dependencies:
-  ameba:
-    github: crystal-ameba/ameba
-    version: ~> 0.13.4
