@@ -17,3 +17,16 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE
+
+Kemal::Config
+
+setup_init_handler
+setup_log_handler
+setup_error_handler
+setup_static_file_handler
+setup_custom_handlers
+setup_filter_handlers
+@default_handlers_setup = true
+@router_included = true
+HANDLERS.insert(HANDLERS.size, Kemal::WebSocketHandler::INSTANCE)
+HANDLERS.insert(HANDLERS.size, Kemal::RouteHandler::INSTANCE)

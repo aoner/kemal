@@ -2,21 +2,58 @@ name: kemal
 version: 1.2.0
 
 authors:
-  - Serdar Dogruyol <dogruyolserdar@gmail.com>
+  - aoner <aoner@gmail.com>
+
+crystal: "~> 1.5.0"
+
+license: MIT
+
+targets:
+  kemal:
+    main: src/amber/cli.cr
 
 dependencies:
-  radix:
-    github: luislavena/radix
-    version: ~> 0.4.0
   exception_page:
     github: crystal-loot/exception_page
     version: ~> 0.3.0
+  amber_router:
+    github: amberframework/amber-router
+    version: ~> 0.4.4
+  redis:
+    github: stefanwille/crystal-redis
+    version: ~> 2.7.0
+  kilt:
+    github: jeromegn/kilt
+    version: ~> 0.6.0
+  cli:
+    github: amberframework/cli
+    version: ~> 0.11.3
+  yaml_mapping:
+    github: crystal-lang/yaml_mapping.cr
+    version: ~> 0.1.0
+  json_mapping:
+    github: crystal-lang/json_mapping.cr
+    version: ~> 0.1.0
+  mysql:
+    github: crystal-lang/crystal-mysql
+    version: ~> 0.13.0
+  sqlite3:
+    github: crystal-lang/crystal-sqlite3
+    version: ~> 0.18.0
+  shell-table:
+    github: luckyframework/shell-table.cr
+    version: ~> 0.9.3
+  inflector:
+    github: phoffer/inflector.cr
+    version: ~> 1.0.0
+  teeplate:
+    github: amberframework/teeplate
+    version: ~> 0.11.2
+  liquid:
+    github: dare892/liquid.cr
+    branch: chore/bump-version-crystal1.0.0
 
 development_dependencies:
   ameba:
     github: crystal-ameba/ameba
-    version: ~> 1.0
-
-crystal: ">= 0.36.0"
-
-license: MIT
+    version: ~> 0.13.4
