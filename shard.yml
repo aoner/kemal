@@ -33,9 +33,3 @@ dependencies:
   sqlite3:
     github: crystal-lang/crystal-sqlite3
     version: ~> 0.18.0
-  inflector:
-    github: phoffer/inflector.cr
-    version: ~> 1.0.0
-  liquid:
-    github: dare892/liquid.cr
-    branch: chore/bump-version-crystal1.0.0
