@@ -50,7 +50,7 @@ class HTTP::Server::Context
   {% end %}
 
   def format
-    Amber::Support::MimeTypes.get_request_format(request)
+    Kemal::Support::MimeTypes.get_request_format(request)
   end
 
   def port
