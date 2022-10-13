@@ -6,7 +6,7 @@ module Kemal
       @@env_hash ||= begin
         env = ENV.to_h
         env["FORKED"] = "1"
-        env["KEMAL_ENV"] = Amber.env.to_s
+        env["KEMAL_ENV"] = Kemal.env.to_s
         env
       end
     end
