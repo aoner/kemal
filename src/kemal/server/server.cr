@@ -5,8 +5,8 @@ module Kemal
   class Server
     Log = ::Log.for(self)
     include Kemal::DSL::Server
-    # alias WebSocketAdapter = WebSockets::Adapters::RedisAdapter.class | WebSockets::Adapters::MemoryAdapter.class
-    # property pubsub_adapter : WebSocketAdapter = WebSockets::Adapters::MemoryAdapter
+    alias WebSocketAdapter = WebSockets::Adapters::RedisAdapter.class | WebSockets::Adapters::MemoryAdapter.class
+    property pubsub_adapter : WebSocketAdapter = WebSockets::Adapters::MemoryAdapter
     getter handler = Pipe::Pipeline.new
     getter router = Router::Router.new
 
