@@ -15,7 +15,7 @@ require "./kemal/router/context"
 require "./kemal/pipes/**"
 require "./kemal/server/**"
 require "./kemal/validators/**"
-# require "./amber/websockets/**"
+require "./kemal/websockets/**"
 require "./kemal/environment"
 
 module Kemal

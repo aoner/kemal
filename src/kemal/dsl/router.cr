@@ -78,8 +78,8 @@ module Kemal::DSL
       {% end %}
     end
 
-    # def websocket(path, app_socket)
-    #   Amber::WebSockets::Server.create_endpoint(path, app_socket)
-    # end
+    def websocket(path, app_socket)
+      Kemal::WebSockets::Server.create_endpoint(path, app_socket)
+    end
   end
 end
