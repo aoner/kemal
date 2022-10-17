@@ -6,7 +6,7 @@ module Kemal
     # Example:
     #
     # ```
-    # class ChatChannel < Amber::Websockets::Channel
+    # class ChatChannel < Kemal::Websockets::Channel
     #   def handle_joined(client_socket)
     #     # functionality when the user joins the channel, optional
     #   end
@@ -80,7 +80,7 @@ module Kemal
           })
           pubsub_adapter
         else
-          raise "Invalid @@adapter on Amber::WebSockets::Channel"
+          raise "Invalid @@adapter on Kemal::WebSockets::Channel"
         end
       end
     end

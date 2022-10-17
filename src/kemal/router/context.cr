@@ -31,7 +31,7 @@ class HTTP::Server::Context
   end
 
   def flash
-    @flash ||= Kemal::Router::Flash.from_session(session.fetch(Amber::Pipe::Flash::PARAM_KEY, "{}"))
+    @flash ||= Kemal::Router::Flash.from_session(session.fetch(Kemal::Pipe::Flash::PARAM_KEY, "{}"))
   end
 
   def websocket?

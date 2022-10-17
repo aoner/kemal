@@ -1,6 +1,6 @@
 module Kemal
   module Pipe
-    # Handler to determine real client IP address when Amber is behind
+    # Handler to determine real client IP address when Kemal is behind
     # trusted reverse proxy or proxies, and save it to context.client_ip.
     #
     # Reverse proxy should pass client IP in a header such as "X-Forwarded-For".

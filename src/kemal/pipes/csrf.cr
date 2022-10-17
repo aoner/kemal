@@ -17,7 +17,7 @@ module Kemal
         if valid_http_method?(context) || self.class.token_strategy.valid_token?(context)
           call_next(context)
         else
-          raise Amber::Exceptions::Forbidden.new("CSRF check failed.")
+          raise Kemal::Exceptions::Forbidden.new("CSRF check failed.")
         end
       end
 

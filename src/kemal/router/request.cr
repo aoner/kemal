@@ -22,7 +22,7 @@ class HTTP::Request
   end
 
   def params
-    @params ||= Amber::Router::Params.new(self)
+    @params ||= Kemal::Router::Params.new(self)
   end
 
   def port
@@ -50,6 +50,6 @@ class HTTP::Request
   end
 
   private def router
-    Amber::Server.router
+    Kemal::Server.router
   end
 end

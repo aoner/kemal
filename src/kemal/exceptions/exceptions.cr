@@ -67,7 +67,7 @@ module Kemal
       class ValidationFailed < Base
         getter errors
 
-        def initialize(@errors : Array(Amber::Validators::Error))
+        def initialize(@errors : Array(Kemal::Validators::Error))
           super("Validation failed. #{@errors}")
         end
       end

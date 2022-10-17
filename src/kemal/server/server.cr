@@ -67,7 +67,7 @@ module Kemal
 
       Signal::INT.trap do
         Signal::INT.reset
-        Log.info { "Shutting down Amber" }
+        Log.info { "Shutting down Kemal" }
         server.close
       end
 

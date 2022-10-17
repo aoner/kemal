@@ -7,7 +7,7 @@ module Kemal
     # Example:
     #
     # ```
-    # struct UserSocket < Amber::Websockets::ClientSocket
+    # struct UserSocket < Kemal::Websockets::ClientSocket
     #   channel "user_channel:*", UserChannel
     #   channel "room_channel:*", RoomChannel
     #
