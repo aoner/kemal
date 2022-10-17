@@ -27,9 +27,3 @@ dependencies:
   json_mapping:
     github: crystal-lang/json_mapping.cr
     version: ~> 0.1.0
-  # mysql:
-  #   github: crystal-lang/crystal-mysql
-  #   version: ~> 0.13.0
-  # sqlite3:
-  #   github: crystal-lang/crystal-sqlite3
-  #   version: ~> 0.18.0
