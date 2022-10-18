@@ -11,7 +11,7 @@ module Kemal
       def initialize
         @routes = Amber::Router::RouteSet(Route).new
         @routes_hash = {} of String => Route
-        # @socket_routes = Array(NamedTuple(path: String, handler: WebSockets::Server::Handler)).new
+        @socket_routes = Array(NamedTuple(path: String, handler: WebSockets::Server::Handler)).new
         @scope = Scope.new
       end
 
