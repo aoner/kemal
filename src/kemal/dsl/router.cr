@@ -1,9 +1,9 @@
 module Kemal::DSL
-  # record Pipeline, pipeline : Pipe::Pipeline do
-  #   def plug(pipe)
-  #     pipeline.plug pipe
-  #   end
-  # end
+  record Pipeline, pipeline : Pipe::Pipeline do
+    def plug(pipe)
+      pipeline.plug pipe
+    end
+  end
 
   record Router, router : Kemal::Router::Router, valve : Symbol, scope : Kemal::Router::Scope do
     RESOURCES = [:get, :post, :put, :patch, :delete, :options, :head, :trace, :connect]
