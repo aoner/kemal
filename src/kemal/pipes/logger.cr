@@ -13,10 +13,10 @@ module Kemal
         status = context.response.status_code
         elapsed = elapsed_text(Time.utc - time)
         request(context, time, elapsed, status, :magenta)
-        log_other(context.request.headers, "headers")
-        log_other(context.request.cookies, "cookies", :light_blue)
+        # log_other(context.request.headers, "headers")
+        # log_other(context.request.cookies, "cookies", :light_blue)
         log_other(context.params, "params", :light_blue)
-        log_other(context.session, "session", :light_yellow)
+        # log_other(context.session, "session", :light_yellow)
         context
       end
 

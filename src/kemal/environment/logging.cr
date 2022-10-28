@@ -36,6 +36,7 @@ module Kemal::Environment
       skip : Array(String),
       filter : Array(String)
 
+    # 日志级别 info ware debug
     def initialize(initial_logging : OptionsType)
       logging = DEFAULTS.merge(initial_logging)
       @colorize = logging["colorize"].as(Bool)

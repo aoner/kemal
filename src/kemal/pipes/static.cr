@@ -156,28 +156,16 @@ module Kemal
 
       private def gzip_encoding(env, file)
         env.response.headers["Content-Encoding"] = "gzip"
-        {% if compare_versions(Crystal::VERSION, "0.35.0-0") >= 0 %}
-          Compress::Gzip::Writer.open(env.response) do |deflate|
-            IO.copy(file, deflate)
-          end
-        {% else %}
-          Gzip::Writer.open(env.response) do |deflate|
-            IO.copy(file, deflate)
-          end
-        {% end %}
+        Compress::Gzip::Writer.open(env.response) do |deflate|
+          IO.copy(file, deflate)
+        end
       end
 
       private def deflate_endcoding(env, file)
         env.response.headers["Content-Encoding"] = "deflate"
-        {% if compare_versions(Crystal::VERSION, "0.35.0-0") >= 0 %}
-          Compress::Deflate::Writer.open(env.response) do |deflate|
-            IO.copy(file, deflate)
-          end
-        {% else %}
-          Flate::Writer.open(env.response) do |deflate|
-            IO.copy(file, deflate)
-          end
-        {% end %}
+        Compress::Deflate::Writer.open(env.response) do |deflate|
+          IO.copy(file, deflate)
+        end
       end
 
       private def multipart(file, env)
